@@ -17,6 +17,33 @@
     <link rel="stylesheet" type="text/css" href="css/main.css" />
   </head>
   <body>
+    <style>
+      @media screen and (min-width: 950px) {
+        .pay-image {
+          width: 400px;
+        }
+        h1 {
+          font-size: 70px;
+        }
+        .save-image {
+          width: 500px;
+        }
+        .believe-image {
+          width: 400px;
+        }
+      }
+      @media screen and (min-width: 1400px) {
+        .pay-image {
+          width: 600px;
+        }
+        .save-image {
+          width: 700px;
+        }
+        .believe-image {
+          width: 600px;
+        }
+      }
+    </style>
     <!-- HERO START -->
     <div class="hero flex flex-col w-full">
       <img
@@ -111,7 +138,9 @@
       <div
         class="flex flex-col md:flex-row items-center w-[85%] mx-auto justify-between"
       >
-        <div class="flex flex-col w-[90%] text-center md:w-[30%] space-y-4">
+        <div
+          class="flex flex-col w-[90%] text-center md:text-left md:w-[40%] space-y-4"
+        >
           <h1>PAY ANYONE INSTANTLY</h1>
           <p>
             It’s free to send and receive money, stocks, or bitcoin** within
@@ -131,7 +160,7 @@
           </p>
         </div>
         <div class="flex">
-          <img class="mx-auto" src="assets/shape4.png" />
+          <img class="mx-auto pay-image w-[350px]" src="assets/shape4.png" />
         </div>
       </div>
     </div>
@@ -150,7 +179,7 @@
           class="mx-auto flex flex-col-reverse md:flex-row bg-transparent justify-between w-[85%]"
         >
           <img
-            class="bg-transparent w-[1000px] md:w-[900px]"
+            class="bg-transparent w-[1000px] save-image"
             src="assets/phone.png"
           />
           <div
@@ -159,7 +188,7 @@
             <h1 class="bg-transparent">SAVE ON EVERYDAY SPENDING</h1>
             <p>Get exclusive discounts with Your App Pay and Your Card</p>
             <button
-              class="bg-white w-max mx-auto md:ml-auto text-[#161616] rounded-[4px] px-8 py-3 font-[500]"
+              class="bg-white w-max mx-auto md:mx-0 md:ml-auto text-[#161616] rounded-[4px] px-8 py-3 font-[500]"
             >
               Click Me
             </button>
@@ -195,7 +224,7 @@
         class="flex flex-col md:flex-row items-center w-[85%] mx-auto justify-between"
       >
         <div
-          class="flex flex-col w-[90%] text-center md:text-left md:w-[30%] space-y-4"
+          class="flex flex-col w-[90%] text-center md:text-left md:w-[40%] space-y-4"
         >
           <h1>BELIEVE YOU CAN BITCOIN</h1>
           <p>
@@ -216,7 +245,7 @@
           </p>
         </div>
         <div class="flex">
-          <img src="assets/shape5.png" />
+          <img src="assets/shape5.png" class="believe-image" />
         </div>
       </div>
     </div>
