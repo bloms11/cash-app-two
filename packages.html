@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cash App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/74c887db15.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+  </head>
+  <body>
+    <div class="flex w-full flex-col">
+      <!-- navbar -->
+      <div class="flex flex-col w-[100%] mx-auto">
+        <div
+          class="flex w-[90%] md:w-[85%] mx-auto items-center justify-between p-2"
+        >
+          <img class="w-[140px] md:w-auto" src="assets/logo.png" />
+          <div class="flex items-center gap-x-8">
+            <button
+              class="bg-white hidden text-[#161616] md:flex rounded-[4px] px-8 py-3 font-[500]"
+            >
+              Login
+            </button>
+            <i class="fa-solid fa-bars cursor-pointer" id="burger-menu"></i>
+          </div>
+        </div>
+        <div class="hidden h-max py-4 w-full bg-white" id="mobile-menu">
+          <div
+            class="flex flex-col space-y-2 w-[90%] bg-transparent md:w-[85%] mx-auto"
+          >
+            <p class="text-[#161616] font-[500]">About Us</p>
+            <p class="text-[#161616] font-[500]">Contact Us</p>
+            <p class="text-[#161616] font-[500] md:hidden">Login</p>
+          </div>
+        </div>
+      </div>
+      <!-- navbar end -->
+
+      <!-- Header -->
+      <div class="flex flex-col w-[85%] p-2 mt-[5%] mx-auto">
+        <h1 class="text-center">Product Block</h1>
+        <p class="w-[90%] text-center xmd:w-[60%] mx-auto mt-6">
+          Here you can choose and purchase power for cloud mining. A significant
+          variation of packages allows our users to get an individual plan for
+          mining.
+        </p>
+        <p class="w-[90%] text-center xmd:w-[60%] mx-auto">
+          Right after the purchase, CH will provide the power of other miners so
+          that you can use it to get your first reward. We are selecting the
+          most efficient equipment, which saves a lot of energy costs, does not
+          heat up as much, cools faster, and more accurately controls the
+          temperature.
+        </p>
+
+        <div
+          class="w-[90%] h-[280px] md:h-[200px] mt-[4%] flex flex-col md:flex-row gap-x-10 justify-between items-center md:w-[70%] mx-auto"
+        >
+          <div
+            onclick="handleThree(this)"
+            class="package-button w-[300px] mx-auto md:mx-0 flex border-2 px-6 font-[500] hover:bg-white hover:text-[black] text-[18px] cursor-pointer text-white rounded-[8px] py-6 items-center justify-center"
+          >
+            3 Month
+          </div>
+          <div
+            onclick="handleSix(this)"
+            class="package-button w-[300px] mx-auto md:mx-0 flex border-2 px-6 font-[500] hover:bg-white hover:text-[black] text-[18px] cursor-pointer text-white rounded-[8px] py-6 items-center justify-center"
+          >
+            6 Month
+          </div>
+          <div
+            onclick="handleTwelve(this)"
+            class="package-button w-[300px] mx-auto md:mx-0 flex border-2 px-6 font-[500] hover:bg-white hover:text-[black] text-[18px] cursor-pointer text-white rounded-[8px] py-6 items-center justify-center"
+          >
+            12 Month
+          </div>
+        </div>
+        <div
+          class="package-3 grid-cols-1 space-y-4 pmd:grid-cols-2 xl:grid-cols-3 3xl:grid-cols-4 gap-x-20 w-full mt-[4%]"
+        >
+          <div class="flex flex-col space-y-4 border-2 p-2 rounded-[8px]">
+            <h4>Iron-3</h4>
+            <div class="flex border-[1px]"></div>
+            <div class="flex w-full justify-between items-center">
+              <p class="text-[#B6B6B6]">Hashpower</p>
+              <p class="font-[500]">18,400 GH/s</p>
+            </div>
+            <div class="flex w-full justify-between items-center">
+              <p class="text-[#B6B6B6]">Full time work</p>
+              <p class="font-[500]">90 Days</p>
+            </div>
+            <div class="flex w-full justify-between items-center">
+              <p class="text-[#B6B6B6]">Full Profit</p>
+              <p class="font-[500]">$99.00</p>
+            </div>
+            <div class="flex w-full justify-between p-2 items-center">
+              <h4>$80.00</h4>
+              <button
+                class="font-[600] py-4 rounded-[10px] px-8 bg-white text-[#161616]"
+              >
+                BUY NOW
+              </button>
+            </div>
+          </div>
+          <div class="flex flex-col space-y-4 border-2 p-2 rounded-[8px]">
+            <h4>Aluminium-3</h4>
+            <div class="flex border-[1px]"></div>
+            <div class="flex w-full justify-between items-center">
+              <p class="text-[#B6B6B6]">Hashpower</p>
+              <p class="font-[500]">18,400 GH/s</p>
+            </div>
+            <div class="flex w-full justify-between items-center">
+              <p class="text-[#B6B6B6]">Full time work</p>
+              <p class="font-[500]">90 Days</p>
+            </div>
+            <div class="flex w-full justify-between items-center">
+              <p class="text-[#B6B6B6]">Full Profit</p>
+              <p class="font-[500]">$99.00</p>
+            </div>
+            <div class="flex w-full justify-between p-2 items-center">
+              <h4>$80.00</h4>
+              <button
+                class="font-[600] py-4 rounded-[10px] px-8 bg-white text-[#161616]"
+              >
+                BUY NOW
+              </button>
+            </div>
+          </div>
+          <div class="flex flex-col space-y-4 border-2 p-2 rounded-[8px]">
+            <h4>Lead-3</h4>
+            <div class="flex border-[1px]"></div>
+            <div class="flex w-full justify-between items-center">
+              <p class="text-[#B6B6B6]">Hashpower</p>
+              <p class="font-[500]">18,400 GH/s</p>
+            </div>
+            <div class="flex w-full justify-between items-center">
+              <p class="text-[#B6B6B6]">Full time work</p>
+              <p class="font-[500]">90 Days</p>
+            </div>
+            <div class="flex w-full justify-between items-center">
+              <p class="text-[#B6B6B6]">Full Profit</p>
+              <p class="font-[500]">$99.00</p>
+            </div>
+            <div class="flex w-full justify-between p-2 items-center">
+              <h4>$80.00</h4>
+              <button
+                class="font-[600] py-4 rounded-[10px] px-8 bg-white text-[#161616]"
+              >
+                BUY NOW
+              </button>
+            </div>
+          </div>
+
+          <div class="flex flex-col space-y-4 border-2 p-2 rounded-[8px]">
+            <h4>Copper-3</h4>
+            <div class="flex border-[1px]"></div>
+            <div class="flex w-full justify-between items-center">
+              <p class="text-[#B6B6B6]">Hashpower</p>
+              <p class="font-[500]">18,400 GH/s</p>
+            </div>
+            <div class="flex w-full justify-between items-center">
+              <p class="text-[#B6B6B6]">Full time work</p>
+              <p class="font-[500]">90 Days</p>
+            </div>
+            <div class="flex w-full justify-between items-center">
+              <p class="text-[#B6B6B6]">Full Profit</p>
+              <p class="font-[500]">$99.00</p>
+            </div>
+            <div class="flex w-full justify-between p-2 items-center">
+              <h4>$80.00</h4>
+              <button
+                class="font-[600] py-4 rounded-[10px] px-8 bg-white text-[#161616]"
+              >
+                BUY NOW
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="package-6 grid-cols-1 space-y-4 pmd:grid-cols-2 xl:grid-cols-3 3xl:grid-cols-4 gap-x-20 w-full mt-[4%]"
+        >
+          <div class="flex flex-col space-y-4 border-2 p-2 rounded-[8px]">
+            <h4>Iron-6</h4>
+            <div class="flex border-[1px]"></div>
+            <div class="flex w-full justify-between items-center">
+              <p class="text-[#B6B6B6]">Hashpower</p>
+              <p class="font-[500]">18,400 GH/s</p>
+            </div>
+            <div class="flex w-full justify-between items-center">
+              <p class="text-[#B6B6B6]">Full time work</p>
+              <p class="font-[500]">90 Days</p>
+            </div>
+            <div class="flex w-full justify-between items-center">
+              <p class="text-[#B6B6B6]">Full Profit</p>
+              <p class="font-[500]">$99.00</p>
+            </div>
+            <div class="flex w-full justify-between p-2 items-center">
+              <h4>$80.00</h4>
+              <button
+                class="font-[600] py-4 rounded-[10px] px-8 bg-white text-[#161616]"
+              >
+                BUY NOW
+              </button>
+            </div>
+          </div>
+          <div class="flex flex-col space-y-4 border-2 p-2 rounded-[8px]">
+            <h4>Aluminium-6</h4>
+            <div class="flex border-[1px]"></div>
+            <div class="flex w-full justify-between items-center">
+              <p class="text-[#B6B6B6]">Hashpower</p>
+              <p class="font-[500]">18,400 GH/s</p>
+            </div>
+            <div class="flex w-full justify-between items-center">
+              <p class="text-[#B6B6B6]">Full time work</p>
+              <p class="font-[500]">90 Days</p>
+            </div>
+            <div class="flex w-full justify-between items-center">
+              <p class="text-[#B6B6B6]">Full Profit</p>
+              <p class="font-[500]">$99.00</p>
+            </div>
+            <div class="flex w-full justify-between p-2 items-center">
+              <h4>$80.00</h4>
+              <button
+                class="font-[600] py-4 rounded-[10px] px-8 bg-white text-[#161616]"
+              >
+                BUY NOW
+              </button>
+            </div>
+          </div>
+          <div class="flex flex-col space-y-4 border-2 p-2 rounded-[8px]">
+            <h4>Lead-6</h4>
+            <div class="flex border-[1px]"></div>
+            <div class="flex w-full justify-between items-center">
+              <p class="text-[#B6B6B6]">Hashpower</p>
+              <p class="font-[500]">18,400 GH/s</p>
+            </div>
+            <div class="flex w-full justify-between items-center">
+              <p class="text-[#B6B6B6]">Full time work</p>
+              <p class="font-[500]">90 Days</p>
+            </div>
+            <div class="flex w-full justify-between items-center">
+              <p class="text-[#B6B6B6]">Full Profit</p>
+              <p class="font-[500]">$99.00</p>
+            </div>
+            <div class="flex w-full justify-between p-2 items-center">
+              <h4>$80.00</h4>
+              <button
+                class="font-[600] py-4 rounded-[10px] px-8 bg-white text-[#161616]"
+              >
+                BUY NOW
+              </button>
+            </div>
+          </div>
+
+          <div class="flex flex-col space-y-4 border-2 p-2 rounded-[8px]">
+            <h4>Copper-6</h4>
+            <div class="flex border-[1px]"></div>
+            <div class="flex w-full justify-between items-center">
+              <p class="text-[#B6B6B6]">Hashpower</p>
+              <p class="font-[500]">18,400 GH/s</p>
+            </div>
+            <div class="flex w-full justify-between items-center">
+              <p class="text-[#B6B6B6]">Full time work</p>
+              <p class="font-[500]">90 Days</p>
+            </div>
+            <div class="flex w-full justify-between items-center">
+              <p class="text-[#B6B6B6]">Full Profit</p>
+              <p class="font-[500]">$99.00</p>
+            </div>
+            <div class="flex w-full justify-between p-2 items-center">
+              <h4>$80.00</h4>
+              <button
+                class="font-[600] py-4 rounded-[10px] px-8 bg-white text-[#161616]"
+              >
+                BUY NOW
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="package-12 grid-cols-1 space-y-4 pmd:grid-cols-2 xl:grid-cols-3 3xl:grid-cols-4 gap-x-20 w-full mt-[4%]"
+        >
+          <div class="flex flex-col space-y-4 border-2 p-2 rounded-[8px]">
+            <h4>Iron-12</h4>
+            <div class="flex border-[1px]"></div>
+            <div class="flex w-full justify-between items-center">
+              <p class="text-[#B6B6B6]">Hashpower</p>
+              <p class="font-[500]">18,400 GH/s</p>
+            </div>
+            <div class="flex w-full justify-between items-center">
+              <p class="text-[#B6B6B6]">Full time work</p>
+              <p class="font-[500]">90 Days</p>
+            </div>
+            <div class="flex w-full justify-between items-center">
+              <p class="text-[#B6B6B6]">Full Profit</p>
+              <p class="font-[500]">$99.00</p>
+            </div>
+            <div class="flex w-full justify-between p-2 items-center">
+              <h4>$80.00</h4>
+              <button
+                class="font-[600] py-4 rounded-[10px] px-8 bg-white text-[#161616]"
+              >
+                BUY NOW
+              </button>
+            </div>
+          </div>
+          <div class="flex flex-col space-y-4 border-2 p-2 rounded-[8px]">
+            <h4>Aluminium-12</h4>
+            <div class="flex border-[1px]"></div>
+            <div class="flex w-full justify-between items-center">
+              <p class="text-[#B6B6B6]">Hashpower</p>
+              <p class="font-[500]">18,400 GH/s</p>
+            </div>
+            <div class="flex w-full justify-between items-center">
+              <p class="text-[#B6B6B6]">Full time work</p>
+              <p class="font-[500]">90 Days</p>
+            </div>
+            <div class="flex w-full justify-between items-center">
+              <p class="text-[#B6B6B6]">Full Profit</p>
+              <p class="font-[500]">$99.00</p>
+            </div>
+            <div class="flex w-full justify-between p-2 items-center">
+              <h4>$80.00</h4>
+              <button
+                class="font-[600] py-4 rounded-[10px] px-8 bg-white text-[#161616]"
+              >
+                BUY NOW
+              </button>
+            </div>
+          </div>
+          <div class="flex flex-col space-y-4 border-2 p-2 rounded-[8px]">
+            <h4>Lead-12</h4>
+            <div class="flex border-[1px]"></div>
+            <div class="flex w-full justify-between items-center">
+              <p class="text-[#B6B6B6]">Hashpower</p>
+              <p class="font-[500]">18,400 GH/s</p>
+            </div>
+            <div class="flex w-full justify-between items-center">
+              <p class="text-[#B6B6B6]">Full time work</p>
+              <p class="font-[500]">90 Days</p>
+            </div>
+            <div class="flex w-full justify-between items-center">
+              <p class="text-[#B6B6B6]">Full Profit</p>
+              <p class="font-[500]">$99.00</p>
+            </div>
+            <div class="flex w-full justify-between p-2 items-center">
+              <h4>$80.00</h4>
+              <button
+                class="font-[600] py-4 rounded-[10px] px-8 bg-white text-[#161616]"
+              >
+                BUY NOW
+              </button>
+            </div>
+          </div>
+
+          <div class="flex flex-col space-y-4 border-2 p-2 rounded-[8px]">
+            <h4>Copper-12</h4>
+            <div class="flex border-[1px]"></div>
+            <div class="flex w-full justify-between items-center">
+              <p class="text-[#B6B6B6]">Hashpower</p>
+              <p class="font-[500]">18,400 GH/s</p>
+            </div>
+            <div class="flex w-full justify-between items-center">
+              <p class="text-[#B6B6B6]">Full time work</p>
+              <p class="font-[500]">90 Days</p>
+            </div>
+            <div class="flex w-full justify-between items-center">
+              <p class="text-[#B6B6B6]">Full Profit</p>
+              <p class="font-[500]">$99.00</p>
+            </div>
+            <div class="flex w-full justify-between p-2 items-center">
+              <h4>$80.00</h4>
+              <button
+                class="font-[600] py-4 rounded-[10px] px-8 bg-white text-[#161616]"
+              >
+                BUY NOW
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Header -->
+    </div>
+    <style>
+      /* Add this CSS to highlight the active button */
+      .package-button.active {
+        background-color: white;
+        color: black;
+      }
+    </style>
+
+    <script>
+      function showDefaultPackage() {
+        const package3 = document.querySelector(".package-3");
+        const package6 = document.querySelector(".package-6");
+        const package12 = document.querySelector(".package-12");
+
+        package3.classList.remove("hidden");
+        package3.classList.add("grid");
+
+        package6.classList.remove("grid");
+        package6.classList.add("hidden");
+
+        package12.classList.remove("grid");
+        package12.classList.add("hidden");
+      }
+
+      // Call the function to show the default package
+      showDefaultPackage();
+
+      function handleThree(button) {
+        const package3 = document.querySelector(".package-3");
+        const package6 = document.querySelector(".package-6");
+        const package12 = document.querySelector(".package-12");
+
+        package3.classList.remove("hidden");
+        package3.classList.add("grid");
+
+        package6.classList.remove("grid");
+        package6.classList.add("hidden");
+
+        package12.classList.remove("grid");
+        package12.classList.add("hidden");
+
+        // Add "active" class to the clicked button
+        button.classList.add("active");
+
+        // Remove "active" class from other buttons
+        const buttons = document.querySelectorAll(".package-button");
+        buttons.forEach((btn) => {
+          if (btn !== button) {
+            btn.classList.remove("active");
+          }
+        });
+      }
+
+      function handleSix(button) {
+        const package3 = document.querySelector(".package-3");
+        const package6 = document.querySelector(".package-6");
+        const package12 = document.querySelector(".package-12");
+
+        package3.classList.remove("grid");
+        package3.classList.add("hidden");
+
+        package6.classList.remove("hidden");
+        package6.classList.add("grid");
+
+        package12.classList.remove("grid");
+        package12.classList.add("hidden");
+
+        // Add "active" class to the clicked button
+        button.classList.add("active");
+
+        // Remove "active" class from other buttons
+        const buttons = document.querySelectorAll(".package-button");
+        buttons.forEach((btn) => {
+          if (btn !== button) {
+            btn.classList.remove("active");
+          }
+        });
+      }
+
+      function handleTwelve(button) {
+        const package3 = document.querySelector(".package-3");
+        const package6 = document.querySelector(".package-6");
+        const package12 = document.querySelector(".package-12");
+
+        package3.classList.remove("grid");
+        package3.classList.add("hidden");
+
+        package6.classList.remove("grid");
+        package6.classList.add("hidden");
+
+        package12.classList.remove("hidden");
+        package12.classList.add("grid");
+
+        // Add "active" class to the clicked button
+        button.classList.add("active");
+
+        // Remove "active" class from other buttons
+        const buttons = document.querySelectorAll(".package-button");
+        buttons.forEach((btn) => {
+          if (btn !== button) {
+            btn.classList.remove("active");
+          }
+        });
+      }
+
+      const burgerMenu = document.getElementById("burger-menu");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      burgerMenu.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>

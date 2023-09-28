@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* h1 {
+  color: red;
+} */
+* {
+  font-family: "Poppins", sans-serif;
+  background-color: #161616;
+  transition: 0.3s ease;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+.fa-bars {
+  color: white;
+}
+h1 {
+  font-size: 90px;
+  color: white;
+  overflow: hidden;
+  font-weight: 400;
+}
+h2 {
+  font-size: 45px;
+  color: white;
+  font-weight: 700;
+}
+h3 {
+  font-size: 30px;
+  font-weight: 500;
+  overflow: hidden;
+  color: white;
+}
+h4 {
+  font-size: 20px;
+  font-weight: 500;
+  overflow: hidden;
+  color: white;
+}
+p {
+  font-size: 16px;
+  color: white;
+  line-height: 30px;
+  background: transparent;
+}
+/* ul li {
+  list-style: decimal;
+} */
+.card1 {
+  background-image: url("/assets/hand.png");
+  background-position: center;
+  background-size: cover;
+}
+.card2 {
+  background-image: url("/assets/blue.png");
+  background-position: center;
+  background-size: cover;
+}
+.overlay {
+  background-image: url("/assets//waves.png");
+  background-position: center;
+  background-size: cover;
+}
+
+#something {
+  border: 1px solid green;
+}
+
+@media screen and (max-width: 970px) {
+  h1 {
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+}
